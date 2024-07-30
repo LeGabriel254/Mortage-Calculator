@@ -23,5 +23,12 @@ document.getElementById('mortgage-form').addEventListener('submit', function(eve
   document.getElementById('monthly-payment').querySelector('span').textContent = monthlyPayment.toFixed(2);
   document.getElementById('total-payment').querySelector('span').textContent = totalPayment.toFixed(2);
 });
+document.getElementById('button').addEventListener('click', calculateRepayments);
 
-document.getElementById()
+// Add event listeners to input fields to recalculate on change
+document.getElementById('amount').addEventListener('input', calculateRepayments);
+document.getElementById('term').addEventListener('input', calculateRepayments);
+document.getElementById('rate').addEventListener('input', calculateRepayments);
+document.querySelectorAll('input[name="type"]').forEach(radio => {
+    radio.addEventListener('change', calculateRepayments);
+});
