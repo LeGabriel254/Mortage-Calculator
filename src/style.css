@@ -25,7 +25,7 @@ body {
   padding: 20px;
 }
 
-.input-section, .output-section {
+.input-section, #output {
   flex: 1;
   padding: 20px;
 }
@@ -62,7 +62,7 @@ button:hover {
   background-color: #e6b800;
 }
 
-.output-section {
+#output{
   background-color: #21215085;
   border-radius: 8px;
   padding: 20px;
