@@ -21,16 +21,18 @@
           <label for="rate">Interest Rate</label>
           <input type="number" id="rate" placeholder="%"required>
 
-          <label for="type">Mortage type</label>
-          <select id="type"required>
-            <option value="Repayment">Repayment</option>
-            <option value="Interest-Only">Interest Only</option>
-          </select>
+          <label for="radio">Mortage type</label>
+          <div class="input-wrapper radio">
+            <input type="radio" id="repayment" name="type" value="repayment" checked>
+            <label for="repayment">Repayment</label>
+            <input type="radio" id="interest-only" name="type" value="interest-only">
+            <label for="interest-only">Interest Only</label>
+        </div>
 
-          <button type="submit">Calculate Repayments</button>
+          <button type="submit" id="button">Calculate Repayments</button>
         </form>
       </div>
-      <div class="output-section">
+      <div id="output">
         <img src="/design/illustration-empty.svg" alt="">
        <h2>Result shown here</h2> 
        <p>Complete the form and click"calculate repayments"to see what your monthly repayments would be.</p>
