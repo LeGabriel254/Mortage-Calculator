@@ -25,7 +25,7 @@ body {
   padding: 20px;
 }
 
-.input-section, #output {
+.input-section, #results {
   flex: 1;
   padding: 20px;
 }
@@ -62,7 +62,7 @@ button:hover {
   background-color: #e6b800;
 }
 
-#output{
+#results{
   background-color: #21215085;
   border-radius: 8px;
   padding: 20px;
@@ -70,9 +70,10 @@ button:hover {
 
 #monthly-payment, #total-payment {
   font-size: 1.2em;
-  color: #333;
+  color:yellow;
 }
 
 span {
   font-weight: bold;
+  color: aqua;
 }

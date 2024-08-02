@@ -13,26 +13,27 @@
         <h2>Mortage Calculator</h2>
         <form class="Mortage form">
           <label for="amount">Mortage Amounts</label>
-          <input type="number" id="amount" placeholder=" £" required>
-
+          <input type="number" id="amount" placeholder=" 300" required>
+            <span>£</span>
           <label for="terms">Mortage Terms</label>
-          <input type="number" id="terms" placeholder="years" required>
-
+          <input type="number" id="terms" placeholder="25" required>
+           <span>years</span>
           <label for="rate">Interest Rate</label>
-          <input type="number" id="rate" placeholder="%"required>
+          <input type="number" id="rate" placeholder="5.25"required>
+          <span>%</span>
 
           <label for="radio">Mortage type</label>
           <div class="input-wrapper radio">
-            <input type="radio" id="repayment" name="type" value="repayment" checked>
             <label for="repayment">Repayment</label>
-            <input type="radio" id="interest-only" name="type" value="interest-only">
+            <input type="checkbox" id="repayment" name="type" value="repayment" checked>
             <label for="interest-only">Interest Only</label>
+            <input type="checkbox" id="interest-only" name="type" value="interest-only">
         </div>
 
           <button type="submit" id="button">Calculate Repayments</button>
         </form>
       </div>
-      <div id="output">
+      <div id="results">
         <img src="/design/illustration-empty.svg" alt="">
        <h2>Result shown here</h2> 
        <p>Complete the form and click"calculate repayments"to see what your monthly repayments would be.</p>
